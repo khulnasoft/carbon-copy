@@ -3,9 +3,9 @@ name: "Run tests for amd64 architecture"
 on:
   workflow_dispatch:
   push:
-    branches: [ khulnasoft ]
+    branches: [ "master","khulnasoft" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "master","khulnasoft" ]
 
 jobs:
   build:
