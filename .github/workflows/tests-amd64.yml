@@ -2,7 +2,7 @@ name: "Run tests for amd64 architecture"
 
 on:
   push:
-    branches: [ master ]
+    branches: [ khulnasoft ]
   pull_request:
     branches: [ master ]
 
