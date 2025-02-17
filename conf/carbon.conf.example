@@ -590,6 +590,9 @@ MIN_RESET_RATIO=0.9
 # reset connections for no good reason.
 MIN_RESET_INTERVAL=121
 
+# cache size for aggregation metrics.  Helps control memory use of relays.
+AGGREGATION_CACHE_SIZE=10000
+
 # Enable TCP Keep Alive (http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html).
 # Default settings will send a probe every 30s. Default is False.
 # TCP_KEEPALIVE=True
@@ -723,7 +726,7 @@ MAX_AGGREGATION_INTERVALS = 5
 # In order to turn off logging of successful connections for the line
 # receiver, set this to False
 # LOG_LISTENER_CONN_SUCCESS = True
-#
+
 # To turn off logging of lost connections for the line receiver set this to
 # False
 # LOG_LISTENER_CONN_LOST = False
@@ -731,6 +734,9 @@ MAX_AGGREGATION_INTERVALS = 5
 # In order to turn off logging of metrics with no corresponding
 # aggregation rules receiver, set this to False
 # LOG_AGGREGATOR_MISSES = False
+
+# cache size for aggregation metrics.  Helps control memory use of relays.
+AGGREGATION_CACHE_SIZE=10000
 
 # Specify the user to drop privileges to
 # If this is blank carbon-aggregator runs as the user that invokes it
